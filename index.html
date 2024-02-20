@@ -6,5 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laptop</title>
   </head>
-  <body></body>
+  <body>
+    <div class="laptop">
+      <main>
+        <div class="body">
+          <div class="heading">
+            <i class="fa fa-bullseye" style="color: gray"></i> .
+          </div>
+          <div class="content">
+            <div class="display" id="display">
+              <div id="videoCall"></div>
+              <div id="pointer">
+                <i class="fas fa-mouse-pointer cursor"></i>
+              </div>
+            </div>
+          </div>
+          <i class="fa fa-windows"></i>
+        </div>
+      </main>
+      <div class="keyboard-perspective">
+        <div class="keyboard">
+          <div class="buttons">
+            <div class="right-key">
+              <button id="power" onclick="onOff()">
+                <i class="fa fa-power-off"></i>
+              </button>
+              <button id="volume"><i class="fa fa-volume-up"></i></button>
+              <button id="darkness" onclick="dark()">
+                <i class="fa fa-sun"></i>
+              </button>
+              <button id="brightness" onclick="bright()">
+                <i class="fas fa-sun"></i>
+              </button>
+              <button id="playMusic" onclick="playAudio()">
+                <i class="fas fa-play-circle"></i>
+              </button>
+              <button id="pause" onclick="pauseAudio()">
+                <i class="fas fa-pause-circle"></i>
+              </button>
+              <button id="camera" onclick="webcam()">
+                <i class="fas fa-camera"></i>
+              </button>
+              <button id="internet" onclick="internetFunc()">
+                <i class="fab fa-internet-explorer"></i>
+              </button>
+            </div>
+          </div>
+          <div class="keypad"></div>
+          <div
+            class="touchpad"
+            onmousemove="playAnimation()"
+            onmouseout="pauseAnimation()"
+          >
+            <button class="key"></button>
+            <button class="key"></button>
+          </div>
+        </div>
+      </div>
+      <audio id="sound">
+        <source
+          src="http://www.freesfx.co.uk/rx2/mp3s/5/17119_1461700869.mp3"
+        />
+      </audio>
+    </div>
+
+    <!-- Script -->
+    <script type="module" defer src="./js/main.js"></script>
+  </body>
 </html>
