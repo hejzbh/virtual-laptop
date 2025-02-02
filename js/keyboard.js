@@ -17,7 +17,6 @@ export class Keyboard {
       return;
     }
 
-    // Implementacija pritiskanja tastere
     this.triggerKeyFunction(key);
   }
 
