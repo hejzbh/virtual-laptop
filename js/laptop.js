@@ -9,7 +9,6 @@ export class Laptop {
     this.keyboard = new Keyboard();
 
     this.isTurnOn = false;
-    // Dodajte ostale atribute po potrebi
   }
 
   turnOn() {
