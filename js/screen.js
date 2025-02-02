@@ -4,7 +4,7 @@ export class Screen {
   desktopIcons = [
     {
       type: "folder",
-      name: "Cao",
+      name: "Hazim Tulumovic",
       img: "",
     },
   ];
@@ -15,7 +15,6 @@ export class Screen {
 
   constructor() {
     this.screen = document.querySelector(".screen");
-    // Implementacija ekrana
   }
 
   displayStartupVideo({ videoPath, onVideoEnd }) {
